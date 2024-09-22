@@ -199,47 +199,82 @@ button.about_btn:hover{
 .about_photo:hover{
     box-shadow: 0px 0px 10px #44f8c5;
 }
-h2.service_head{
-    margin-top: 150px;
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    padding-top: 80px;
+
+.service{
+    background:var(--snd-bg-color) ;
+    color: aliceblue;
 }
-h1.service_head span{
-    color: #44f8c5;
-}
-div.card{
-    display: flex;
-    justify-self: space-around;
-    gap:20px;
+.heading{
     text-align:center;
-    margin:50px;
+    font-size: 6.5rem;
+}
+
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    align-items:center;
+    gap: 2.3rem;
+    margin-top: 4.1rem;
+}
+.service_desc h1{
+    font-size: 50px;
+    color:aliceblue;
+}
+.row{
+    background: var(--bg-color);
+    border-radius: 27px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main color);
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+.row img{
+    height: 250px;
+    width: 100%;
+    border-radius: 27px;
+    margin-bottom: 1.4rem;
+}
+.row h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: aliceblue;
+    line-height: 1.4;
+}
+
+.row:hover{
+    border: 1px solid var(--main-color);
+    transform: translate(-5px) scale(1.04);
+    cursor:pointer;
+
+}
+
+/*deitplan*/
+
+.diet{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    padding-top: 80px;
     color: white;
 }
-.card_layout{
-    background-color: rgb(60, 60, 60);
-    padding: 30px;
-    border-radius:20px ;
-    transition: .3s ease;
+.diet_desc{
+    margin-left: 40px;
 }
-.card_layout:hover{
-    border: 2px solid #44f8c5;
-    box-shadow: 0px 0px 15px #44f8c5;
+.diet_desc h1{
+    font-size: 40px;
 }
-.card_layout i{
-    font-size:25px;
+.diet_desc h2{
+    margin-top: 10px;
+}
+.diet_desc span{
     color: #44f8c5;
 }
-.card_layout h2{
-    font-size: 25px;
-    margin: 15px;
+.diet_desc p{
+    margin-top: 10px;
 }
-.card_layout p{
-    margin-top: 15px;
-}
-button.service-btn{
-    padding: 10px 25px 10px 25px;
+button.diet_btn{
+    padding: 15px 25px 15px 25px;
     font-size: 20px;
     background-color: #44f8c5;
     margin-top: 20px;
@@ -248,56 +283,18 @@ button.service-btn{
     border:none;
     transition: .3s ease;
 }
-button.service_btn:hover{
+button.diet_btn:hover{
     background: transparent;
     border: 2px solid #44f8c5;
-    color:white;
-}
-h1.port_head{
-    margin-top: 150px;
-    text-align: center;
     color: white;
-    font-size: 40px;
-    padding-top: 80px;
 }
-h1.port_head span{
-    color: #44f8c5;
+.diet_photo:hover{
+    box-shadow: 0px 0px 10px #44f8c5;
 }
-div.project{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.project_card{
-    margin: 30px;
-    margin-top: 60px;
-    box-shadow: 5px 5px 15px black;
-    position: relative;
-}
-.project_desc{
-    width: 430px;
-    box-shadow: border-box;
-    position: absolute;
-    padding: 5px;
-    color: white;
-    bottom: 0px;
-    text-align: center;
-    transition: .5s ease-out;
-}
-.project_card:hover .project_desc{
-    border-image:fill 0 linear-gradient(#0001,#44f8c5) ;
-    height: 200px;
-    bottom: 0px;
-    padding: 60px;
-}
-.project_card h1{
-    opacity: 0;
-    visibility: hidden;
-}
-.project_card:hover h1{
-    opacity: 1;
-    visibility: visible;
-}
+
+
+
+
 /* contact style */
 h1.contact_head{
     margin-top: 150px;
@@ -356,41 +353,3 @@ button.form_btn:hover{
     text-align: center;
 }
 
-.services{
-    background:var(--snd-bg-color) ;
-}
-
-.services-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
-    align-items:center;
-    gap: 2.3rem;
-    margin-top: 4.1rem;
-}
-.row{
-    background: var(--bg-color);
-    border-radius: 27px;
-    border: 1px solid transparent;
-    box-shadow: 0 0 5px var(--main color);
-    padding: 20px;
-    transition: all 0.5s ease;
-}
-.row img{
-    height: auto;
-    width: 100%;
-    border-radius: 27px;
-    margin-bottom: 1.4rem;
-}
-.row h4{
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-.row:hover{
-    border: 1px solid var(--main-color);
-    transform: translate(-5px) scale(1.04);
-    cursor:pointer;
-
-}
